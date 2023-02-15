@@ -27,8 +27,8 @@
 // ["Customer Name :Romio Joliat , Age :35", "Customer Name :Mario Ristrova , Age :39", ... ]
 
 const customerAndAge = (obj) => {
-  const output = [];
-  for (const [name, age] of Object.entries(obj)) {
+  let output = [];
+  for (let [name, age] of Object.entries(obj)) {
     output.push(`Customer Name :${name} , Age :${age}`);
   }
   return output;
@@ -59,8 +59,8 @@ const customerAndAge = (obj) => {
 // You can solve this challenge by using Object.entries
 
 const getEntries = (recipeInfo) => {
-  const output = [];
-  for (const [key, value] of Object.entries(recipeInfo)) {
+  let output = [];
+  for (let [key, value] of Object.entries(recipeInfo)) {
    
       output.push(`${key}: ${value}`);
     
