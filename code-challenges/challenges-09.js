@@ -19,15 +19,14 @@
 //  
 
 const arrInc = (arr) => {
-    let result = [];
-    for(let[key,value] of Object.entries(arr) ){
-        let a= value;
-        a=a+10;
-        result.push(a);
-
-    }
+    const result = [];
+    arr.forEach((value) => {
+      const incremented = value + 10;
+      result.push(incremented);
+    });
     return result;
-}
+  }
+  
 // -------------------------------------------------------------------------------------------------------
 
 
